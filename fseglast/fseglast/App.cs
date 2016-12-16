@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using fseglast.masterdetailedpage;
 using Xamarin.Forms;
 
 namespace fseglast
@@ -12,19 +12,9 @@ namespace fseglast
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
+            // MainPage = new NavigationPage(new first());
+            // MainPage = new MainPage();
+            MainPage= new NavigationPage(new numberone());
         }
 
         protected override void OnStart()
